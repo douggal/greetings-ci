@@ -14,7 +14,7 @@ on:
     branches: [ "main" ]
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -23,6 +23,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+
+    - name: Conventional Changelog Action
+      # You may pin to the exact commit or the version.
+      # uses: TriPSs/conventional-changelog-action@858fe562a4d01987825f5e96b2a541f53b22c8b6
+      uses: TriPSs/conventional-changelog-action@v3.18.0
+      
     - name: Set up JDK 11
       uses: actions/setup-java@v3
       with:
