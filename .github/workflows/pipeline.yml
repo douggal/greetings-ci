@@ -28,8 +28,7 @@ jobs:
       # You may pin to the exact commit or the version.
       # uses: TriPSs/conventional-changelog-action@858fe562a4d01987825f5e96b2a541f53b22c8b6
       uses: TriPSs/conventional-changelog-action@v3.18.0
-      with:
-        skip-git-pull: "true"
+      
     - name: Set up JDK 11
       uses: actions/setup-java@v3
       with:
