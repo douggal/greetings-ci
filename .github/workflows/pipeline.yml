@@ -25,6 +25,7 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: Conventional Changelog Action
+      id: changelog
       # You may pin to the exact commit or the version.
       # uses: TriPSs/conventional-changelog-action@858fe562a4d01987825f5e96b2a541f53b22c8b6
       uses: TriPSs/conventional-changelog-action@v3.18.0
@@ -38,6 +39,10 @@ jobs:
       uses: gradle/gradle-build-action@v2 #update to v2
       with:
         arguments: build
+
+    - name: Tag artifact
+      run: mv build/libs/greetings-ci.jar build/libs/greetings-ci-${{
+steps.changelog.outputs.version || github.event.inputs.myVersion }}.jar
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
