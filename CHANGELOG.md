@@ -1,3 +1,13 @@
+# [0.3.0](https://github.com/douggal/greetings-ci/compare/v0.2.0...v0.3.0) (2023-10-24)
+
+
+### Features
+
+*  version artifact ([82fef87](https://github.com/douggal/greetings-ci/commit/82fef876e4e3517052697406ab505c6d70420e83))
+* artifact version number ([52759b6](https://github.com/douggal/greetings-ci/commit/52759b6d1985a4f2c09b1f11a649631bde069440))
+
+
+
 # [0.2.0](https://github.com/douggal/greetings-ci/compare/v0.1.0...v0.2.0) (2023-10-24)
 
 
